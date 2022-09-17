@@ -19,10 +19,10 @@ COUNT_MULT EQU 021h
 BANK_SEL EQU 5
 ANSEL EQU 9Fh
  
- PSECT resetVect, class=CODE, delta=2
- resetVect:
+PSECT resetVect, class=CODE, delta=2
+resetVect:
     PAGESEL main
-    goto main
+    GOTO main
 
 PSECT code, delta=2
 main:
